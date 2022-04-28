@@ -16,6 +16,7 @@ void setup()
 {
   Serial.begin(9800);
   pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(signalLed, OUTPUT);
   for (int player = 0; player < PLAYER_COUNT ; ++player) {
     // при помощи квадратных скобок получают значение в массиве
     // под указанным в них номером. Нумерация начинается с нуля
